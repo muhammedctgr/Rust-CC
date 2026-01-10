@@ -24,8 +24,9 @@ Initialize a `HashMap`, insert the value `amount` at the key `address`.
 
 Return this hash map.
 
-## Test
+# Test
 
 ```shell
 cargo test
 ```
+
