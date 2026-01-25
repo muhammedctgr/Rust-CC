@@ -30,5 +30,7 @@ fn main() {
     // Useful when returning a type with no value (example: Result<(), Error>)
     let empty = ();
 
-
+    // Nested tuple
+    let nested = (('a', 1.23), ('b', true, 1), ());
+    println!("nested: {}", (nested.0).1);
 }
