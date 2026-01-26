@@ -12,5 +12,8 @@ fn main() {
     let i = res.unwrap();
     println!("res = {:?}", i);
 
-    
+    let res: Result<u32, String> = Err("error".to_string());
+    // Same as unwrap with custom error message
+    let i = res.expect("result not ok");
+    println!("res = {:?}", i);
 }
