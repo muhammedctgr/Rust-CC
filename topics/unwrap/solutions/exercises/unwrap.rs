@@ -7,5 +7,10 @@ fn main() {
     let i = x.unwrap();
     println!("{}", i);
 
+    let res: Result<u32, String> = Ok(123);
+    // Unwraps the inner value. Panics if Err
+    let i = res.unwrap();
+    println!("res = {:?}", i);
+
     
 }
