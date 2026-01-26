@@ -17,4 +17,9 @@ fn test_parse_and_add_panic_2() {
     parse_and_add("1", "b");
 }
 
-
+#[test]
+fn test_unwrap_and_add() {
+    let x = Some(1);
+    let y = Some(2);
+    assert_eq!(unwrap_and_add(x, y), 3);
+}
