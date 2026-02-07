@@ -24,4 +24,15 @@ fn main() {
     // Type placeholder - compiler will infer the type
     let x: _ = true;
 
+    // Printing values with `println!` macro:
+    let x = 1;
+    println!("x: {}", x);
+    // Inline
+    println!("x: {x}");
+    // Positional
+    println!("{0} + {0} = {1}", x, x + x);
+    // Debug - useful for complex types
+    println!("x: {:?}", x);
+    // Debug with easy to read line breaks
+    println!("x: {:#?}", x);
 }
