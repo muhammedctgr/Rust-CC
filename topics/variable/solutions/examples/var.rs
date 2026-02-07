@@ -16,5 +16,12 @@ fn main() {
     // Type inference: the compiler can infer types in most cases.
     let x = -1;
 
+    // Shadowing: you can redeclare a variable with the same name.
+    let x: i32 = -1;
+    let x = x + 1;
+    let x = true;
+
+    // Type placeholder - compiler will infer the type
+    let x: _ = true;
 
 }
